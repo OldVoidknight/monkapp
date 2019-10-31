@@ -1,0 +1,93 @@
+.adminpage{
+    display:flex;
+    justify-content: space-between;
+}
+
+.admin-options{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.admin-options button{
+    width: 100px;
+    border: 5px groove #1C6EA4;
+}
+
+.admin-controls{
+    width:100%;
+}
+
+/*---------------REGISTRATION---------------------------*/
+.registerform{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    border:2px solid red;
+    height:500px;
+}
+
+.fullname{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+
+.contact{
+    padding:5px;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+
+
+.credential{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+
+.controls{
+}
+
+.controls button{
+    border: 5px groove #1C6EA4;
+    padding:7px;
+    margin-left:25px;
+}
+/*-----------------------!REGISTRATION---------------------------*/
+
+/*-----------------------CATALOG---------------------------*/
+.catalogform{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content:center;
+    margin-left:5px;
+    box-sizing: border-box;
+}
+
+.identification{
+    padding:5px;
+    align-self: center;
+    width:90%;
+}
+.identification label{
+    padding:2px;
+}
+
+.author{
+    align-self: center;
+    width:30%;
+}
+
+.publication{
+    display:inline-flex;
+
+    justify-content: center;
+    align-self:center;
+}
+/*-----------------------!CATALOG---------------------------*/
