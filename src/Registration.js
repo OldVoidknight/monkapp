@@ -24,24 +24,20 @@ function Registration(){
         <div>
             <form className='registerform'>
                 <div className='fullname'>
-                    <label>Name</label>
                     <input placeholder='First Name'></input>
                     <input placeholder='Middle Name'></input>
                     <input placeholder='Last Name'></input>
                 </div>
                 <div className='contact'>
-                    <label>Address</label>
-                    <textarea/>
+                    <textarea placeholder='Enter Address'/>
                     <label>Date of Birth</label>
                     <input type='date'></input>
-                    <label>Phone Number</label>
-                    <input type='tel' maxlength='10' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'></input>
-                    <label>Email</label>
-                    <input type='email'></input>
+                    <input type='tel' maxlength='10' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' placeholder='Phone Number' ></input>
+                    <input type='email' placeholder='E-Mail' ></input>
                 </div>
                 <div className='credential'>
                     <label>Patron ID</label>
-                    <input></input>
+                    <input placeholder='Patron ID' ></input>
                     <label>Registration Date</label>
                     <input type='date'></input>
                     <img src={imgState.imgURL} alt='' width='100' height='100'/>

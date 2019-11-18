@@ -9,25 +9,11 @@
     margin:9rem 0;
 }
 
-
-
-.login-input label{
-    display: block;
+.login-input input{
+    margin:5px;
 }
 
 .login-buttons{
-    padding:5px;
-}
-
-.login-buttons button{
-    border:none;
-    border-radius:15px;
-    background-color:gray;
-    width:100%;
-}
-
-.login-buttons button:hover{
-    background-color: #4DA6FF;
-    color: white;
-    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
 }

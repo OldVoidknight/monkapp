@@ -1,49 +1,168 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button{
+  background: transparent;
+  color: white;
+  width:100px;
+  border: 2px solid white;
+  padding: 5px;
 }
+
+button:focus{
+  outline:none;
+}
+
+button:hover{
+  border-color:#0A15C5;
+  color: #0A15C5;
+  transition: 0.6s ease-out;
+  cursor: pointer;
+}
+
+input{
+  background-color:transparent;
+  appearance: none;
+  border-style: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+input:focus{
+  border-bottom: 2px solid #0A15C5;
+  outline: none;
+  color:#0A15C5;
+  transition: 0.6s ease-out;
+}
+
+textarea{
+  background-color:transparent;
+  appearance: none;
+  border-style: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+textarea:focus{
+  border-bottom: 2px solid #0A15C5;
+  outline: none;
+  color:#0A15C5;
+  transition: 0.6s ease-out;
+}
+
+select{
+  background-color:transparent;
+  border-style: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+select:focus{
+  border-bottom: 2px solid #0A15C5;
+  outline: none;
+  color:#0A15C5;
+  transition: 0.6s ease-out;
+}
+
+option{
+  background-color: transparent;
+}
+
+.critical{
+  background-color: red;
+}
+
+.warning{
+  background-color: #FFD919;
+}
+
+.success{
+  background-color: green;
+}
+
 /*----------------APP---------------------*/
 .App{
   display:flex;
   justify-content: stretch;
-
+  width:1366spx;
+  height:657px;
+  overflow: hidden;
 }
 
-
 .appheader{
-  background:	#1C6EA4;
+  background:	#100e17;
   width:30%;
+  height:100%;
   text-align: center;
-  
+  color: white;
+}
+
+.appheader img{
+  margin-top: 30px;
 }
 
 .appbody{
   background: #BFC1C2;
   width: 70%;
+  height:100%;
 }
 /*----------------!APP---------------------*/
 
 /*-----------------CARD-------------------*/
 .card-container{
-  background:#ffffff;
+  background:#100e17;
+  color:white;
   height: 500px;
   width: 60vw;
-  margin: 15vh auto;
+  margin: 10vh auto;
   border-radius:20px;
-  box-shadow: 10px 5px 5px #B0C4DE;
+  box-shadow: 10px 5px 5px grey;
   padding:10px;
 }
 
-
-
-
 /*----------------!CARD---------------------*/
+
+/*----------------INFOMODAL---------------------*/
+.infomod-container{
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.infomod-wrapper{
+  background-color: #fefefe;
+  width: 50%;
+  margin: 10% auto;
+  display: flex;
+}
+
+.infomod-left{
+  width:15%;
+  margin-right: 20px;
+}
+
+.infomod-right h3{
+  color:black;
+  text-decoration-line: blink;
+}
+
+.infomod-right p{
+  color:#100e17;
+}
+
+.infomod-right button{
+  background: #100e17;
+}
+
+/*----------------!INFOMODAL---------------------*/
