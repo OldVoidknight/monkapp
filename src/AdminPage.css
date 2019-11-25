@@ -67,17 +67,19 @@
 }
 
 .identification{
-    padding:5px;
+    padding:25px;
     align-self: center;
-    width:90%;
 }
 .identification label{
     padding:2px;
 }
+.identification select{
+    width:130px;
+}
 
 .author{
     align-self: center;
-    width:30%;
+    padding: 25px;
 }
 
 .publication{
@@ -86,6 +88,25 @@
     height:100%;
     flex-direction: column;
     align-self: center;
-    padding:10px;
+    padding:25px;
 }
 /*-----------------------!CATALOG---------------------------*/
+
+/*-----------------------REPORT---------------------------*/
+.report-parameters{
+    border: 1px solid white;
+    padding:20px;
+}
+
+.params{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.params input{
+    width:80%;
+}
+
+
+/*-----------------------!REPORT---------------------------*/

@@ -24,12 +24,19 @@ function LoginForm(props){
             setMsgType('Incomplete Fields')
             setMsgText('Some input fields are empty, please check and try again.')
             showModal()
+        } else {
+            props.history.push('/admin')
         }
         // props.history.push('/admin')
     }
 
     const handleChange=(e) =>{
         setValue({...value,[e.target.name]:e.target.value})}
+
+    const resetLogin=(e)=>{
+        e.preventDefault()
+        setValue({username:'',password:''})
+    }
 
 
     return(
@@ -41,7 +48,7 @@ function LoginForm(props){
             {modalVisible? <InfoMod color={msgcolor} type={msgtype} text={msgtext} onClick={()=>setModalVisible(false)} />:null}
             <div className='login-buttons'>
                 <button onClick={handleLogin}>Login</button>
-                <button>Cancel</button>
+                <button onClick={resetLogin}>Cancel</button>
             </div>
            
         </form>

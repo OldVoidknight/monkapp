@@ -36,7 +36,6 @@ function Registration(){
                     <input type='email' placeholder='E-Mail' ></input>
                 </div>
                 <div className='credential'>
-                    <label>Patron ID</label>
                     <input placeholder='Patron ID' ></input>
                     <label>Registration Date</label>
                     <input type='date'></input>

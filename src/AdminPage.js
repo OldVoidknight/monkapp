@@ -5,7 +5,7 @@ import Catalog from './Catalog';
 import Report from './Report';
 
 
-function AdminPage(){
+function AdminPage(props){
     const [register,setRegister]=useState(false)
     const [catalog,setCatalog]=useState(false)
     const [report,setReport]=useState(false)
@@ -25,6 +25,9 @@ function AdminPage(){
         setCatalog(false)
         setRegister(false)
     }
+    const handleLogout=()=>{
+        props.history.push('/')
+    }
 
   
 
@@ -35,6 +38,7 @@ function AdminPage(){
                 <button onClick={handleRegClick}>Registration</button>
                 <button onClick={handleCatClick}>Catalog</button>
                 <button onClick={handleRepClick}>Reports</button>
+                <button onClick={handleLogout}>Logout</button>
             </div>
             <div className='admin-controls'>
                 {register && <Registration/>}

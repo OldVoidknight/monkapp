@@ -1,0 +1,33 @@
+.memberpage{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.left-block{
+    width: 30%;
+    height:100%;
+}
+
+.right-block{
+    width: 70%;
+    height: 100%;
+}
+
+.photo{
+    width:90%;
+    height:50%;
+    border: 5px double white;
+    margin-top:10px;
+    margin-left:7px; 
+}
+
+.header{
+    width:100%;
+}
+
+.header button{
+    width:50%;
+}
